@@ -1,1 +1,116 @@
-index.html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Aleksandr Timorin</title>
+    <link type="text/css" href="xss.css" media="all" rel="stylesheet">
+</head>
+
+<script>
+    function foo() {
+        var a = [1368, 1357, 1360, 1364, 1366, 
+                 1355, 1360, 1367, 1401, 1353, 
+                 1355, 1366, 1357, 1366, 1367, 
+                 1364, 1368, 1360, 1365, 1303, 
+                 1370, 1361
+                ];
+        var e = [];
+        for (var i=0; i < a.length; i++) {
+            e.push(String.fromCharCode(a[i]^1337));
+        }
+
+        window.document.getElementById('email').textContent=e.join('');
+    }
+</script>
+    
+<body bgcolor="#fefef1">
+<center>
+    <h1>Aleksandr Timorin</h1>
+    <p id="email" onclick="foo();"> + email +<p>
+    5078 0B3E 0554 CE70 2421 28D3 78F8 F310 04E8 6056
+</center>
+<br><hr>
+    
+<table align="left" border="0" cellspacing="0" cellpadding="1">
+
+<tr>
+<td valign="top">
+    <i>Personal information:</i>
+<pre>
+    Aleksandr Timorin
+    twitter: @atimorin
+</pre>
+</td>
+</tr>
+<tr>
+<td valign="top">
+    <i>Education:</i>
+<pre>
+    MS of mathematics, mathematic-mechanic department,
+    specialty - mathematics, applied mathematics,
+    specialization - system programming;
+    </pre>
+</td>
+</tr>
+
+<tr>
+<td valign="top">
+    <i>Conferences, public releases:</i>
+    <ul>
+        <li>Confidence, BalcCon, Hack.lu, 31C3 (2014): "SCADA deep iside: protocols and security mechanisms" (http://goo.gl/Fd7iUA) </li>
+        <li>Positive Hack Days III, Moscow, “Industrial protocols for pentesters” (http://goo.gl/jn1RFI)</li>
+        <li>Power Of Community 2013, Seoul, “Techniques of Attacking Real SCADA & ICS Systems” (http://goo.gl/AstWpX)</li>
+        <li>Chaos Communication Congres (30C3), workshop “Hacking SCADA: ICS Penetration testing workshop” (http://goo.gl/HlXkLQ)</li>
+        <li>ICS/SCADA toolkit: nmap scripts, python scanners, fuzzer, bruteforcers, hashes extractors (http://goo.gl/Q287q8)</li>
+        <li>THC-Hydra module for password bruteforsing of industrial programmable logic controller (PLC) Siemens S7-300 (http://goo.gl/yEYIOp)</li>
+        <li>Yandex bug bounty program hall of fame (http://goo.gl/yI0NWy)</li>
+</td>
+</tr>
+
+<tr>
+<td valign="top">
+    <i>Current Position:</i>
+<ul>
+    <li><pre>
+Leading specialist, department of industrial control systems security 
+</pre></li>
+    
+    </ul>
+</td>
+</tr>
+
+<tr>
+<td valign="top">
+    <i>Alerts | Advisories | CVE:</i>
+    <ul>
+        <li><per> [ public disclosure ] </per></li>
+        <li><per> Siemens SIMATIC STEP 7 TIA Portal Vulnerabilities | https://ics-cert.us-cert.gov/advisories/ICSA-15-048-01 </per></li>
+        <li><per> Siemens SIMATIC S7-1200 Vulnerabilities | https://ics-cert.us-cert.gov/advisories/ICSA-14-079-02 </per></li>
+        <li><per> Siemens SIMATIC S7-1500 CPU Firmware Vulnerabilities | https://ics-cert.us-cert.gov/advisories/ICSA-14-073-01 </per></li>
+        <li><per>Offline Brute-Force Password Tool Targeting Siemens S7 | https://ics-cert.us-cert.gov/alerts/ICS-ALERT-13-016-02</per></li>
+    </ul>
+</td>
+</tr>
+    
+<tr>
+<td valign="top">
+    <i>Additional information:</i>
+<pre>
+    Excellent knowledge of English.
+    Driving license class B.
+    Personal qualities: purposefulness, self-organization, team-working,
+    easily adaptation to new environment and requirements.
+    Interests: sports (basketball, football, powerlifting, snowboarding, rock climbing).
+    Without bad habits. Ready for relocation.
+</pre>
+</td>
+</tr>
+<tr>
+    <td valign="top"><b>Note</b>: full curriculum vitae after email contact only</td>
+    </tr>
+    </table>
+    
+</body>
+
+</html>
